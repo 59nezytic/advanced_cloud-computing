@@ -5,7 +5,8 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: webui
+    matchLabels:
+      app: webui
   template:
     metadata:
       name: nginx-pod
